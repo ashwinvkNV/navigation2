@@ -110,6 +110,7 @@ This process is then repeated a number of times and returns a converged solution
  | near_goal_distance          | double    | Default 0.5. Distance near goal to stop applying preferential obstacle term to allow robot to smoothly converge to goal pose in close proximity to obstacles.   
  | cost_scaling_factor       | double    | Default 10.0. Exponential decay factor across inflation radius. This should be the same as for your inflation layer (Humble only)
  | inflation_radius          | double    | Default 0.55. Radius to inflate costmap around lethal obstacles. This should be the same as for your inflation layer (Humble only)
+ | inflation_layer_name        | string    | Default "". Name of the inflation layer. If empty, it uses the last inflation layer in the costmap. If you have multiple inflation layers, you may want to specify the name of the layer to use. |
 
 #### Path Align Critic
  | Parameter                  | Type   | Definition                                                                                                                         |
